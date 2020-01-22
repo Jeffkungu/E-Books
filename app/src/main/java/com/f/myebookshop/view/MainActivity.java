@@ -1,7 +1,8 @@
-package com.f.myebookshop;
+package com.f.myebookshop.view;
 
 import android.os.Bundle;
 
+import com.f.myebookshop.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 

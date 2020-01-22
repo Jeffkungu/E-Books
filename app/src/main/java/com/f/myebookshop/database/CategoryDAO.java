@@ -23,5 +23,5 @@ public interface CategoryDAO {
     void delete(Category category);
 
     @Query("SELECT * FROM categories_table")
-    LiveData<List<Category>> getAllCatefgory();
+    LiveData<List<Category>> getAllCategory();
 }
