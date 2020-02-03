@@ -31,27 +31,27 @@ public class EBookShopRepository {
     }
 
     public void insertCategory(Category category){
-        new InsertCategoryAsyncTask(categoryDAO).execute();
+        new InsertCategoryAsyncTask(categoryDAO).execute(category);
     }
 
     public void insertBook(Book book){
-        new InsertBookAsyncTask(booksDAO).execute();
+        new InsertBookAsyncTask(booksDAO).execute(book);
     }
 
     public void deleteBook(Book book){
-        new DeleteBookAsyncTask(booksDAO).execute();
+        new DeleteBookAsyncTask(booksDAO).execute(book);
     }
 
     public void updateBook(Book book){
-        new UpdateBookAsyncTask(booksDAO).execute();
+        new UpdateBookAsyncTask(booksDAO).execute(book);
     }
 
     public void deleteCategory(Category category){
-        new DeleteCategoryAsyncTask(categoryDAO).execute();
+        new DeleteCategoryAsyncTask(categoryDAO).execute(category);
     }
 
     public void updateCategory(Category category){
-        new UpdateCategoryAsyncTask(categoryDAO).execute();
+        new UpdateCategoryAsyncTask(categoryDAO).execute(category);
     }
 
     private static class InsertBookAsyncTask extends AsyncTask<Book, Void, Void>{

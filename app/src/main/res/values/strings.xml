@@ -1,4 +1,8 @@
 <resources>
-    <string name="app_name">E-Books</string>
+    <string name="app_name">EBooks</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_add_and_edit">AddAndEditActivity</string>
+    <string name="submit_button">Submit</string>
+    <string name="book_name">Book Name</string>
+    <string name="unit_price">Unit Price</string>
 </resources>
